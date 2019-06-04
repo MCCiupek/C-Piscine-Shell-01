@@ -1,1 +1,1 @@
-find . -type f -o -type d -maxdepth 1 | wc -l
+find . -type f -o -type d -maxdepth 1 | wc -l | sed s/"       "//
