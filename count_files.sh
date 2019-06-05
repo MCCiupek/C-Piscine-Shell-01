@@ -1,1 +1,2 @@
-find . -type f -o -type d -maxdepth 1 | wc -l | sed s/"       "//
+#!/bin/sh
+find . -type f -o -type d | wc -l | tr -d " "
